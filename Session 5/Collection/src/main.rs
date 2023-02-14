@@ -90,6 +90,7 @@ fn main() {
 
 // }
 
+/*
 #[allow(dead_code)]
 // #[derive(Debug)]
 use std::collections::HashMap;
@@ -113,3 +114,69 @@ fn main() {
     println!("numerics: {:?}", numerics);
 }
 
+
+ */
+
+/*
+// Enum
+#[allow(dead_code)]
+#[derive(Debug)]
+enum Payment {
+    Cash,
+    Cheque,
+    DebitCard(i32),
+}
+
+#[allow(dead_code)]
+enum AccountType {
+    Savings = 10,
+    Current = 20,
+    FixedDeposit = 30,
+}
+
+fn main() {
+    let p1 = Payment::Cash;
+    let p2 = Payment::DebitCard(500);
+
+    match p1 {
+        Payment::Cash => println!("Paying by cash"),
+        Payment::Cheque => println!("Paying by Cheque"),
+        Payment::DebitCard(amount) => println!("Amount {amount} paid by debit card"),
+    }
+
+    match p2 {
+        Payment::Cash => println!("Paying by cash"),
+        Payment::Cheque => println!("Paying by Cheque"),
+        Payment::DebitCard(amount) => println!("Amount {amount} paid by debit card"),
+    }
+
+}
+
+ */
+// Match operator
+
+// fn main() {
+
+//     // Match Operator
+//     // is similar to the 'switch' statement
+//     // Uses pattern matching
+
+//     let number = 16;
+
+//     match number {
+//         1 => println!("One"),
+//         2 => println!("Two"),
+//         3 | 5 | 7 | 9 => println!("Odd value less than 10"),
+//         10..=20 => println!("Number between 10 and 20"),
+//         15..=25 => println!("Number between 15 and 25"),
+//         _ => println!("Some other value")
+//     };
+
+//     let is_even = match number % 2 {
+//         0 => true,
+//         1 => false,
+//         _ => false
+//     };
+
+//     println!("Number: {number} is even: {is_even}");
+// }
