@@ -18,7 +18,7 @@
 //         cgpa: 3.5
 //     };
 
-//     println!("st1 is {:?}", st1);
+    // println!("st1 is {:?}", st1);
 
 //     // println!("Name of student: {}", st1.name);
 //     show_student_name(&st1);
@@ -118,3 +118,4 @@
 //     println!("st2 is {:?}", st2);
 //
 // }
+

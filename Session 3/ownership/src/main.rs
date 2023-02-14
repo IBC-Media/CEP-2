@@ -86,15 +86,19 @@ fn add_world(s: &mut String) {
 
 
  */
+//
 
-// fn main() {
-//     let s = String::from("hello");
-//
-//     let r1 = &s;
-//     let r2 = &s;
-//
-//     let mut s2 = String::from("abcd");
-//     let mr1 = &mut s2;
-//     let mr2 = &mut s2;
-//
-// }
+struct student {
+    first_name: String,
+    second: String,
+}
+
+fn main()
+{
+    let mut name = student {
+         first_name: String::from("Deepak"),
+        second: String::from("chaudhary"),
+    };
+
+
+}
