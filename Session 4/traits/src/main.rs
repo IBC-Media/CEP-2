@@ -86,3 +86,35 @@ struct p {
 
  */
 
+use std::collections::HashMap;
+
+trait Display {
+    fn show_contents(&self);
+}
+
+impl<T: std::fmt::Debug> Display for Vec<T> {
+    fn show_contents(&self) {
+        for item in self {
+            println!("{:?}", item);
+        }
+    }
+}
+
+impl<K: std::fmt::Debug, V: std::fmt::Debug> Display for HashMap<K, V> {
+    fn show_contents(&self) {
+        for (key, value) in self {
+            println!("{:?}: {:?}", key, value);
+        }
+    }
+}
+
+fn main() {
+    let v = vec![1, 2, 3];
+    v.show_contents();
+
+    let mut h = HashMap::new();
+    h.insert("one", 1);
+    h.insert("two", 2);
+    h.insert("three", 3);
+    h.show_contents();
+}
