@@ -177,7 +177,6 @@ fn main() {
 //         1 => false,
 //         _ => false
 //     };
-
 //     println!("Number: {number} is even: {is_even}");
 // }
 fn main() {
